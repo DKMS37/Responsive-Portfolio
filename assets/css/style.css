@@ -53,7 +53,7 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
+ 
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -246,10 +246,35 @@ input[type=submit] {
     background-color: blue;
   }
 
-  .container #main-container {
+  .container #main-container #masthead  {
     width: 640px;
-    padding: 20px;
+    position: static;
+    z-index: 99;
 
+  }
+  .navbar{ float: left;
+
+  }
+  #logo {
+     margin-left: 60px;
   }
 
   
+  /* Width at 560px and below */
+@media screen and (max-width: 560px) {
+  body {
+    background-color: salmon;
+  }
+
+  .container #main-container #masthead  {
+    width: 560px;
+    position: static;
+    z-index: 99;
+
+  }
+  .navbar{ float: left; margin-top: 5px; margin-left: 25px;
+
+  }
+  #logo { margin-left: 60px;
+
+  }
